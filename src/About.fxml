@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AboutController">
+   <children>
+      <TextArea editable="false" layoutX="4.0" layoutY="99.0" prefHeight="298.0" prefWidth="592.0" text="Movie Collection Manager is a simple application that helps you keep up with the movies you need to watch. It helps you save, edit and delete movies. It also helps you filter, sort and search your movie list. The searching option allows you to search by your movie's title. You can search your sorted movie list but not the filtered ones. You can filter your movies according to their Genre, year of release and director. You can sort your filtered list but please note, once you search for a movie using the text field, the active filter will be reset and the sorting type will be cleared. The application will display general statistics about your movie collection at the botton right. You can find information about the total movies in your list and a breakdown of the total movies based on genre, year of release and directors. In the botton tab, you will find the reports button, once you select it, you will be redirected to a new page which will allow to print readable reports about your movie collection. You will have the ability to save these reports to a text file. Hope you find this application useful!" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font></TextArea>
+      <Label alignment="CENTER" layoutX="116.0" layoutY="14.0" prefHeight="72.0" prefWidth="369.0" text="Welcome to Movie Collection Manager!">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="94.0" fitWidth="108.0" layoutX="488.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" rotate="26.6">
+         <image>
+            <Image url="@../movieIcon.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="returnButton" layoutX="33.0" layoutY="38.0" mnemonicParsing="false" onAction="#onReturnClicked" text="Return" />
+   </children>
+</AnchorPane>
